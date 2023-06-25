@@ -3,6 +3,6 @@
 
 int main()
 {
-    printf("um texto aqui\n");
+    printf("um txt\n");
     return 0;
 }
