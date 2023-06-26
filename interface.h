@@ -30,8 +30,8 @@ int MenuTelaInicial ();
 void MostrarSubMenu();
 int MostrarCadastros ();
 
-//PRODUTOS
+//PASSAGEIROS
 int Menu (char opcoes[][21], int x[], int y[], int n);
-void MostrarTelaProdutos();
+void MostrarTelaPassageiros();
 void MostrarTelaListarProdutos();
 #endif // INTERFACE_H_INCLUDED

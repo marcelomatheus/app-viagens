@@ -212,31 +212,21 @@ int MenuVertical (char opcoes[][21], int x[], int y[], int n){
 
 
 
-//INTERFACE DE PRODUTOS
-void MostrarTelaProdutos(){ //apenas desenha a tela
-    //int escolha;
-    //Produto P;
-    textcolor(MAGENTA); textbackground(WHITE);
+//INTERFACE DE PASSAGEIROS
+void MostrarTelaPassageiros(){
+    textcolor(WHITE); textbackground(DARK_GRAY);
     Borda (0,0,85,25,1,0);
-    textcolor(MAGENTA); textbackground(WHITE);
-    gotoxy (32,2); printf ("PRODUTOS");
-    gotoxy (10,6); printf ("Codigo: ");
-    Borda (20,5,15,2,0,0); //posição, largura, tamanho da borda
-    gotoxy (10,9); printf ("Descricao: ");
+    textcolor(WHITE); textbackground(DARK_GRAY);
+    gotoxy (32,2); printf ("PASSAGEIROS");
+    gotoxy (10,6); printf ("CPF (somente numeros): ");
+    Borda (20,5,15,2,0,0);
+    gotoxy (10,9); printf ("Nome completo: ");
     Borda (20,8,60,2,0,0);
-    gotoxy (10,12); printf ("Preco: ");
+    gotoxy (10,12); printf ("Telefone: ");
     Borda (20,11,60,2,0,0);
-    gotoxy (10,15); printf ("Saldo: ");
-    Borda (20,14,20,2,0,0);
     textcolor(MAGENTA); textbackground(MAGENTA);
-    /*gotoxy (21,6); scanf ("%d", &P.codigo);
-    gotoxy (21,9); scanf (" %[^\n]", P.descricao);
-    gotoxy (21,12); scanf ("%lf", &P.preco);
-    gotoxy (21,15); scanf ("%d", &P.saldo);
-    gotoxy (10,19); printf ("1 - NOVO  2 - PESQUISAR  3 - ALTERAR  0 - MENU ANTERIOR");
-    scanf ("%d", &escolha);
-    *opcao=escolha;*/
 }
+
 
 //INTERFACE DE LISTAR PRODUTOS
 void MostrarTelaListarProdutos(){ //apenas desenha a tela
