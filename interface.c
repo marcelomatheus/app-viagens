@@ -66,6 +66,12 @@ void textbackground (int iColor){
 }
 
 
+void FecharTerminal (){
+    //OBS: COLOCAR TODAS AS FUNCOES DE FECHAR ARQUIVOS AQUI A MEDIDA QUE FOR FAZENDO ELAS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    exit(0);
+}
 
 //MENUS:
 //SELECIONAR - MENU HORIZONTAL
@@ -94,12 +100,6 @@ int MenuHorizontal(char opcoes[][21], int x[], int y[], int n){
         return opcao;
 }
 
-void FecharTerminal (){
-    //OBS: COLOCAR TODAS AS FUNCOES DE FECHAR ARQUIVOS AQUI A MEDIDA QUE FOR FAZENDO ELAS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    exit(0);
-}
 
 //TELA INICIAL
 int MenuTelaInicial (){
