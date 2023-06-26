@@ -15,8 +15,7 @@ Trabalho final da disciplina de Algoritmo e Estrutura de Dados da Universidade E
 ### Relatório
 1. Histórico de viagens e recibos - Motorista (filtro)
 2. Histórico de viagens e recibos - Passageiro (filtro)
-3. Total de viagens - Motorista
-4. Total de viagens - Passageiros
+3. Faturamento total - Motorista
 
 
 
