@@ -8,11 +8,9 @@ Trabalho final da disciplina de Algoritmo e Estrutura de Dados da Universidade E
 3. Viagem (Motorista, Passageiro, endereço de saída, destino, produto, preço, horário agendado, forma de pagamento*)
 
 ### Rotinas
-1. Solicitar viagem, definir rota e agendar viagem - Carro
-2. Solicitar viagem, definir rota e agendar viagem - Moto
-3. Entregar produtos
-4. Definir formas de pagamentos*
-5. Avaliar Motorista
+1. Login 
+2. Solicitar viagem, cancelar, definir rota e agendar viagem - Carro
+3. Avaliar Motorista
 
 ### Relatório
 1. Histórico de viagens e recibos - Motorista (filtro)
