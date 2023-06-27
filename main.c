@@ -11,7 +11,7 @@ int main()
     printf("Digite 1 para cadastrar novo passageiro\n");
     printf("Digite 2 para cadastrar um novo motorista\n");
     printf("Digite 3 para fazer login como passageiro\n");
-    printf("Digite 4 para ver os relatorios de viagens da bublee\n");
+    printf("Digite 4 para acessar os relatorios de viagens da bublee\n");
     scanf("%d",&opcao);
 
     //As seguinties funções ainda não foram criadas, são apenas para estruturar o projeto
