@@ -8,7 +8,7 @@ int main()
 {
     int opcao;
 
-    printf("Digite 1 para cadastrar passageiro\n");
+    printf("Digite 1 para cadastrar novo passageiro\n");
     printf("Digite 2 para cadastrar um motorista\n");
     printf("Digite 3 para fazer login como passageiro\n");
     printf("Digite 4 para ver os relatorios de viagens da bublee\n");
