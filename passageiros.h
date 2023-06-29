@@ -1,7 +1,9 @@
 #ifndef PASSAGEIROS_H_INCLUDED
 #define PASSAGEIROS_H_INCLUDED
 
+//DEFINICAO
 struct passageiro {
+    int ID;
     char CPF [11];
     char nome[51]; //somente números
     char telefone[11];
@@ -9,10 +11,15 @@ struct passageiro {
 
 typedef struct passageiro Passageiro;
 
-void AbrirArquivoPassageiros();
+//ARQUIVOS
+FILE* AbrirArquivoPassageiros();
 void FecharPassageiros();
-void MenuPassageiro ();
 
+//INTERFACE
+void MenuPassageiro();
+
+//FUNCOES
+void DigitarPassageiro();
 
 
 #endif // PASSAGEIROS_H_INCLUDED

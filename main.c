@@ -40,9 +40,6 @@ Você pode adaptar esse exemplo de acordo com as necessidades específicas do seu 
 */
 
 
-
-
-
 int main (){
     Produto Produtos[100]; //JÁ COM TYPEDEF
     Cliente Clientes[100];

@@ -1,0 +1,53 @@
+# depslib dependency file v1.0
+1687805307 source:c:\users\sarah\desktop\trabalho final aeds\aplicativo de viagem\cliente.c
+	<stdio.h>
+	"cliente.h"
+
+1687805318 c:\users\sarah\desktop\trabalho final aeds\aplicativo de viagem\cliente.h
+
+1687804058 source:c:\users\sarah\desktop\trabalho final aeds\aplicativo de viagem\motorista.c
+
+1687999932 source:c:\users\sarah\desktop\trabalho final aeds\aplicativo de viagem\passageiros.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"passageiros.h"
+	"interface.h"
+
+1687805011 source:c:\users\sarah\desktop\trabalho final aeds\aplicativo de viagem\viagens.c
+
+1687999932 source:c:\users\sarah\desktop\trabalho final aeds\aplicativo de viagem\interface.c
+	<stdio.h>
+	<windows.h>
+	<wincon.h>
+	"interface.h"
+	"passageiros.h"
+
+1687960562 c:\users\sarah\desktop\trabalho final aeds\aplicativo de viagem\interface.h
+
+1688000530 source:c:\users\sarah\desktop\trabalho final aeds\aplicativo de viagem\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	"produto.h"
+	"cliente.h"
+	"interface.h"
+
+1687805171 c:\users\sarah\desktop\trabalho final aeds\aplicativo de viagem\produto.h
+
+1687805349 source:c:\users\sarah\desktop\trabalho final aeds\aplicativo de viagem\modelo do main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	"produto.h"
+	"cliente.h"
+	"interface.h"
+
+1687998137 source:c:\users\sarah\desktop\trabalho final aeds\aplicativo de viagem\produto.c
+	<stdio.h>
+	"produto.h"
+	<windows.h>
+	"interface.h"
+
+1687999186 c:\users\sarah\desktop\trabalho final aeds\aplicativo de viagem\passageiros.h
+

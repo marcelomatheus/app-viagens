@@ -11,7 +11,6 @@ Produto DigitarProduto(){
     gotoxy (21,9); scanf (" %[^\n]", &P.descricao);
     gotoxy (21,12); scanf ("%lf", &P.preco);
     gotoxy (21,15); scanf ("%d", &P.saldo);
-
 return P;
 }
 
@@ -72,11 +71,12 @@ void MenuProduto (int*opcao){
     int x[] = {12, 25, 40, 55, 70, 37};
     int y[] = {20, 20, 20, 20, 20, 22};
     do {
-        MostrarTelaProdutos();
-        op = Menu (opcoes, x, y, 6);
+        //MostrarTelaProdutos();
+        //op = Menu (opcoes, x, y, 6);
         *opcao = op;
      //TERMINAR O MENU!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
      //baseado no que está no main, mas lembrando que todas as opções desceram 1 número. O que era 1, agora é 0.
     } while (opcao=! 27);
 }
+
 

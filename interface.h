@@ -16,22 +16,27 @@
 #define TEC_PAGE_DOWN 1081
 
 void Borda(int x, int y, int largura, int altura, int tipo, int sombra);
+int getTecla();
 void gotoxy(int x, int y);
 enum DOS_COLORS;
 void textcolor (int iColor);
 void textbackground (int iColor);
+void setConsoleFontSize(int size);
 
-int getTecla();
 void FecharTerminal ();
-//TELA INICIAL
-void MostrarTelaInicial();
+
+//MENUS
 int MenuHorizontal(char opcoes[][21], int x[], int y[], int n);
+int MenuVertical (char opcoes[][21], int x[], int y[], int n);
 int MenuTelaInicial ();
-void MostrarSubMenu();
+int MostrarRelatorios ();
+int MostrarRotinas ();
 int MostrarCadastros ();
 
+
 //PASSAGEIROS
-int Menu (char opcoes[][21], int x[], int y[], int n);
 void MostrarTelaPassageiros();
+
+
 void MostrarTelaListarProdutos();
 #endif // INTERFACE_H_INCLUDED

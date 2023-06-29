@@ -35,10 +35,11 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="cliente.h" />
-		<Unit filename="main.c">
+		<Unit filename="interface.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="modelo do main.c">
+		<Unit filename="interface.h" />
+		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="motorista.c">
