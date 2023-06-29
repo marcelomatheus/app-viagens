@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1687867887 source:c:\users\marce\desktop\trabalho aeds\appviagens\interface.c
+
+1687886398 source:c:\users\marce\desktop\trabalho aeds\appviagens\passageiros.c
+	<stdio.h>
+
+1687867887 source:c:\users\marce\desktop\trabalho aeds\appviagens\viagens.c
+
+1687998120 source:c:\users\marce\desktop\trabalho aeds\appviagens\main.c
+	<stdio.h>
+	<stdlib.h>
+	"passageiros.h"
+	"motorista.h"
+	"viagens.h"
+
+1687867887 c:\users\marce\desktop\trabalho aeds\appviagens\passageiros.h
+
+1687998120 c:\users\marce\desktop\trabalho aeds\appviagens\motorista.h
+
+1687867887 c:\users\marce\desktop\trabalho aeds\appviagens\viagens.h
+
+1687998216 source:c:\users\marce\desktop\trabalho aeds\appviagens\motorista.c
+	<stdio.h>
+	"motorista.h"
+

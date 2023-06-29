@@ -6,7 +6,9 @@
 
 int main()
 {
+    AbrirArquivoMotorista();
     int opcao;
+    Motorista moto;
 
     printf("Digite 1 para cadastrar novo passageiro\n");
     printf("Digite 2 para cadastrar um novo motorista\n");
@@ -15,15 +17,20 @@ int main()
     scanf("%d",&opcao);
 
     //As seguinties funções ainda não foram criadas, são apenas para estruturar o projeto
-
     if(opcao==1){
-        CadastroPassageiro();
+
     }else if(opcao==2){
-        CadastroMotorista();
+    CadastroMotorista();
     }else if(opcao==3){
-        MenuPassageiro();
+
     }else if(opcao==4){
-        Relatorios();
+
     }
+
+    fseek(M,0,SEEK_SET);
+    while(fread(&moto,sizeof(Motorista),1,M)){
+        printf("%s\n",moto.nome);
+    }
+    FecharArquivoMotorista();
     return 0;
 }

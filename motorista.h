@@ -1,6 +1,6 @@
 #ifndef MOTORISTA_H_INCLUDED
 #define MOTORISTA_H_INCLUDED
-
+FILE *M;
 struct motorista{
     char nome[25];
     char carro[25];

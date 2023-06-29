@@ -1,9 +1,13 @@
 #include <stdio.h>
 #include "motorista.h"
-FILE *M;
+
 
 void AbrirArquivoMotorista(){
     M = fopen("motorista.txt","ab+");
+    if(M==NULL){
+        printf("Nao foi possivel abrir o arquivo\n");
+        exit(1);
+    }
 }
 
 void GravarDados(Motorista motorista){
@@ -22,8 +26,7 @@ void CadastroMotorista(){
     scanf(" %[^\n]",motorista.carro);
     printf("Placa: ");
     scanf(" %[^\n]",motorista.placa);
-    AbrirArquivoMotorista();
     GravarDados(motorista);
-    FecharArquivoMotorista();
+
 }
 //a função fflush(fp) grava tudo que está no buffer
