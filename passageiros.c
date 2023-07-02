@@ -33,7 +33,7 @@ void DigitarPassageiro(){
     FILE * fpPassageiro = AbrirArquivoPassageiros();
     gotoxy (21,6); scanf ("%d", &P.ID);
     gotoxy (21,9); scanf (" %[^\n]", P.nome);
-    gotoxy (21,12); scanf (" %[^\n]", P.CPF);
+    gotoxy (21,12); scanf ("%d", &P.CPF);
     gotoxy (21,15); scanf (" %[^\n]", P.telefone);
     fseek(fpPassageiro,0, SEEK_END);
     fwrite(&P, sizeof(Passageiro), 1, fpPassageiro);

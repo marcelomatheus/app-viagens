@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <windows.h>
 #include <string.h>
 #include "motoristas.h"
 #include "interface.h"
@@ -46,7 +47,7 @@ void PesquisarMotorista()
         printf("%s", motorista.placa);
         gotoxy(21,20);
         system("pause");
-        scanf("%s",&motorista.cpf);
+
         }
     }
 
@@ -70,18 +71,19 @@ void MenuMotorista()
             motorista = DigitarMotorista();
             fseek(M,0, SEEK_END);
             GravarDados(motorista);
-            MenuMotorista();
+
         }
         else if(op==1 )
         {
             PesquisarMotorista();
-            MenuMotorista();
+
         }else if(op==3){
 
         }
         if (op == 5) MenuTelaInicial();
     }
     while (op=! 27);
+    MenuMotorista();
     fclose(M);
 }
 

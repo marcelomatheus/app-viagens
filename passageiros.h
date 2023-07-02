@@ -4,7 +4,7 @@
 //DEFINICAO
 struct passageiro {
     int ID;
-    char CPF [11];
+    long int CPF;
     char nome[51]; //somente números
     char telefone[11];
 };

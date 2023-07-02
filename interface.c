@@ -4,6 +4,22 @@
 #include "interface.h"
 #include "passageiros.h"
 #include "motoristas.h"
+#include "viagens.h"
+#include <time.h>
+
+void pause (float delay1) { //essa  função determina o tempo de espera para a próxima linha de execução
+
+   if (delay1<0.001) return; // pode ser ajustado e/ou evita-se valores negativos.
+
+   float inst1=0, inst2=0;
+
+   inst1 = (float)clock()/(float)CLOCKS_PER_SEC;
+
+   while (inst2-inst1<delay1) inst2 = (float)clock()/(float)CLOCKS_PER_SEC;
+
+   return;
+
+}
 
 //BORDA
 void Borda(int x, int y, int largura, int altura, int tipo, int sombra){    // EsqSup DirSup EsqInf DirInf LHoriz LVertical
@@ -194,7 +210,7 @@ int MostrarRotinas (){
         Borda (23,10,19,8,1,0);
         textcolor(WHITE); textbackground(GREEN);
         op = MenuVertical (opcoes, x, y, 4);
-        //if (op == 0) MenuProduto();
+        if (op == 0) MenuViagens();
         //if (op == 1) MenuMotorista();
         //if (op == 2) MenuTelaInicial ();
         if (op == 3) MenuTelaInicial();
@@ -249,10 +265,10 @@ void MostrarTelaPassageiros(){
     gotoxy (36,2); printf ("PASSAGEIROS");
     gotoxy (10,6); printf ("ID: ");
     Borda (20,5,14,2,0,0);
-    gotoxy (10,9); printf ("CPF*: ");
-    Borda (20,8,14,2,0,0);
-    gotoxy (10,12); printf ("Nome: ");
-    Borda (20,11,60,2,0,0);
+    gotoxy (10,9); printf ("Nome: ");
+    Borda (20,8,60,2,0,0);
+    gotoxy (10,12); printf ("CPF*: ");
+    Borda (20,11,14,2,0,0);
     gotoxy (10,15); printf ("Telefone*: ");
     Borda (20,14,14,2,0,0);
     gotoxy (10,17); printf ("* somente numeros");

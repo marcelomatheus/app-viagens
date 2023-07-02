@@ -32,6 +32,7 @@ int MenuTelaInicial ();
 int MostrarRelatorios ();
 int MostrarRotinas ();
 int MostrarCadastros ();
+void pause (float delay1);
 
 
 
