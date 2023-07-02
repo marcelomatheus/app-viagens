@@ -1,0 +1,105 @@
+# depslib dependency file v1.0
+1687805307 source:c:\users\sarah\desktop\trabalho final aeds\aplicativo de viagem\cliente.c
+	<stdio.h>
+	"cliente.h"
+
+1687805318 c:\users\sarah\desktop\trabalho final aeds\aplicativo de viagem\cliente.h
+
+1687804058 source:c:\users\sarah\desktop\trabalho final aeds\aplicativo de viagem\motorista.c
+
+1687999932 source:c:\users\sarah\desktop\trabalho final aeds\aplicativo de viagem\passageiros.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"passageiros.h"
+	"interface.h"
+
+1687805011 source:c:\users\sarah\desktop\trabalho final aeds\aplicativo de viagem\viagens.c
+
+1687999932 source:c:\users\sarah\desktop\trabalho final aeds\aplicativo de viagem\interface.c
+	<stdio.h>
+	<windows.h>
+	<wincon.h>
+	"interface.h"
+	"passageiros.h"
+
+1687960562 c:\users\sarah\desktop\trabalho final aeds\aplicativo de viagem\interface.h
+
+1688000530 source:c:\users\sarah\desktop\trabalho final aeds\aplicativo de viagem\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	"produto.h"
+	"cliente.h"
+	"interface.h"
+
+1687805171 c:\users\sarah\desktop\trabalho final aeds\aplicativo de viagem\produto.h
+
+1687805349 source:c:\users\sarah\desktop\trabalho final aeds\aplicativo de viagem\modelo do main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	"produto.h"
+	"cliente.h"
+	"interface.h"
+
+1687998137 source:c:\users\sarah\desktop\trabalho final aeds\aplicativo de viagem\produto.c
+	<stdio.h>
+	"produto.h"
+	<windows.h>
+	"interface.h"
+
+1687999186 c:\users\sarah\desktop\trabalho final aeds\aplicativo de viagem\passageiros.h
+
+1688253254 source:c:\users\marce\desktop\sarah\appviagens\appviagens\cliente.c
+	<stdio.h>
+	"cliente.h"
+
+1688253254 c:\users\marce\desktop\sarah\appviagens\appviagens\cliente.h
+
+1688265320 source:c:\users\marce\desktop\sarah\appviagens\appviagens\interface.c
+	<stdio.h>
+	<windows.h>
+	<wincon.h>
+	"interface.h"
+	"passageiros.h"
+	"motoristas.h"
+
+1688254707 c:\users\marce\desktop\sarah\appviagens\appviagens\interface.h
+
+1688253254 c:\users\marce\desktop\sarah\appviagens\appviagens\passageiros.h
+
+1688254219 source:c:\users\marce\desktop\sarah\appviagens\appviagens\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	"produto.h"
+	"cliente.h"
+	"interface.h"
+
+1688253254 c:\users\marce\desktop\sarah\appviagens\appviagens\produto.h
+
+1688269831 source:c:\users\marce\desktop\sarah\appviagens\appviagens\motorista.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"motoristas.h"
+	"interface.h"
+
+1688253254 source:c:\users\marce\desktop\sarah\appviagens\appviagens\passageiros.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"passageiros.h"
+	"interface.h"
+
+1688253254 source:c:\users\marce\desktop\sarah\appviagens\appviagens\produto.c
+	<stdio.h>
+	"produto.h"
+	<windows.h>
+	"interface.h"
+
+1688253254 source:c:\users\marce\desktop\sarah\appviagens\appviagens\viagens.c
+
+1688269553 c:\users\marce\desktop\sarah\appviagens\appviagens\motoristas.h
+

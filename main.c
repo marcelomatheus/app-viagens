@@ -1,36 +1,56 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "passageiros.h"
-#include "motorista.h"
-#include "viagens.h"
+#include <windows.h>
+#include "produto.h"
+#include "cliente.h"
+#include "interface.h"
 
-int main()
-{
-    AbrirArquivoMotorista();
-    int opcao;
-    Motorista moto;
 
-    printf("Digite 1 para cadastrar novo passageiro\n");
-    printf("Digite 2 para cadastrar um novo motorista\n");
-    printf("Digite 3 para fazer login como passageiro\n");
-    printf("Digite 4 para acessar os relatorios de viagens da bublee\n");
-    scanf("%d",&opcao);
+/*Controle de Viagens por Aplicativos
+Cadastros:
+    Motoristas
+        placa do veículo
+        marca do veículo
+        nome do motorista
+        telefone do motorista
+    Passageiros
+        CPF
+        nome
+        endereco
+        telefone
+Rotinas:
+    Solicitar Viagem
+    Cancelar Viagem
+    Avaliar Motorista
+Relatórios
+Viagens por Motorista (mostrar detalhes)
+Viagens por Passageiro (mostrar detalhes)
+Faturamento Total
 
-    //As seguinties funções ainda não foram criadas, são apenas para estruturar o projeto
-    if(opcao==1){
+Nesse exemplo, o menu principal do sistema de viagens por aplicativos tem três categorias principais: Cadastros, Rotinas e Relatórios. Cada categoria tem opções específicas relacionadas às funcionalidades do sistema.
 
-    }else if(opcao==2){
-    CadastroMotorista();
-    }else if(opcao==3){
+A opção "Cadastros" permite o gerenciamento de informações relacionadas aos motoristas, passageiros e veículos. Isso inclui adicionar, editar e excluir registros dessas entidades.
 
-    }else if(opcao==4){
+A categoria "Rotinas" engloba funcionalidades relacionadas à execução das viagens, como solicitar uma viagem, verificar o histórico de viagens e cancelar uma viagem em andamento.
 
-    }
+A seção "Relatórios" oferece a geração de informações estatísticas sobre as viagens realizadas, como o número de viagens por motorista, o número de viagens por passageiro e o faturamento mensal do serviço.
 
-    fseek(M,0,SEEK_SET);
-    while(fread(&moto,sizeof(Motorista),1,M)){
-        printf("%s\n",moto.nome);
-    }
-    FecharArquivoMotorista();
-    return 0;
+Você pode adaptar esse exemplo de acordo com as necessidades específicas do seu sistema de viagens por aplicativos.
+
+*/
+
+
+int main (){
+    Produto Produtos[100];
+    Cliente Clientes[100];
+    int quant = 0, opcao, codigo, i, menu, opcao2, quant2, codigo2;
+    do {
+        MenuTelaInicial();
+        }
+            while (opcao != 5);
+
+ return 0;
 }
+
+
+
