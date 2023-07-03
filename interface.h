@@ -25,6 +25,9 @@ void setConsoleFontSize(int size);
 
 void FecharTerminal ();
 
+//DESENHO
+void DesenharCarro();
+
 //MENUS
 int MenuHorizontal(char opcoes[][21], int x[], int y[], int n);
 int MenuVertical (char opcoes[][21], int x[], int y[], int n);
@@ -37,6 +40,4 @@ int MostrarCadastros ();
 //PASSAGEIROS
 void MostrarTelaPassageiros();
 
-
-void MostrarTelaListarProdutos();
 #endif // INTERFACE_H_INCLUDED

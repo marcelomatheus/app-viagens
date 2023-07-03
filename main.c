@@ -13,11 +13,6 @@ Cadastros:
         marca do veículo
         nome do motorista
         telefone do motorista
-    Passageiros
-        CPF
-        nome
-        endereco
-        telefone
 Rotinas:
     Solicitar Viagem
     Cancelar Viagem
@@ -41,100 +36,10 @@ Você pode adaptar esse exemplo de acordo com as necessidades específicas do seu 
 
 
 int main (){
-    Produto Produtos[100]; //JÁ COM TYPEDEF
-    Cliente Clientes[100];
-    int quant = 0, opcao, codigo, i, menu, opcao2, quant2, codigo2;
+    int opcao;
     do {
         MenuTelaInicial();
-        /*printf ("\MENU\n\n");
-        printf ("1 - Produto\n2 - Cliente\n\n0 - Sair\n\n\n");
-        printf ("Escolha a opcao: "); scanf ("%d", &menu);*/
-
-        //CADASTRO DE PRODUTOS
-        if (menu == 0) {
-        do {
-        MenuProduto(&opcao);
-        /*printf ("\nCADASTRO DE PRODUTOS\n\n");
-        printf ("0 - Novo produto\n1 - Pesquisar produto\n2 - Alterar produto\n3 - Excluir produto\n4 - Listar produtos\n\n5 - Voltar para o menu anterior\n\n\n");
-        printf ("Escolha a opcao: "); scanf ("%d", &opcao);*/
-        if (opcao == 0){
-            Produtos[quant]=DigitarProduto();
-            quant++;
-        }
-
-        if (opcao == 1){
-            /*for (i=0; i<quant;i++){
-                if (codigo == Produtos[i].codigo) ImprimirProduto(Produtos[i]);
-                }*/
-            PesquisaProduto (Produtos, quant);
-            }
-
-        if (opcao == 2){
-            printf("CODIGO DO PRODUTO: "); scanf ("%d", &codigo);
-            for (i=0; i<quant;i++){
-                if (codigo == Produtos[i].codigo) Produtos[quant]=DigitarProduto();
-                }
-            }
-
-        if (opcao == 3){
-            printf("CODIGO DO PRODUTO: "); scanf ("%d", &codigo);
-            for (i=0; i<quant;i++){
-                if (codigo == Produtos[i].codigo) Produtos[i].codigo = Produtos[i].codigo * (-1);
-
-                }
-            }
-
-        if (opcao == 4){
-            MostrarTelaListarProdutos();
-            ListarProdutos(Produtos, quant);
-            /*for (i=0; i<quant;i++){
-                    if (Produtos[i].codigo >= 0) ImprimirProduto(Produtos[i]);
-            }*/
-                }
-            }
-            while (opcao != 5);
-        }
-
-
-
-        //CADASTRO DE CLIENTES
-        if (menu == 2) {
-            do {
-                printf ("\nCADASTRO DE CLIENTE\n\n");
-                printf ("1 - Novo cadastro\n2 - Pesquisar cadastro\n3 - Alterar cadastro\n4 - Excluir cadastro\n5 - Listar clientes\n\n0 - Voltar para o menu anterior\n\n\n");
-                printf ("Escolha a opcao: "); scanf ("%d", &opcao2);
-                if (opcao2 == 1){
-                    Clientes[quant2]= DigitarCliente();
-                    quant2++;
-                    }
-
-                if (opcao2 == 2){
-                    printf("CODIGO DO CLIENTE: "); scanf ("%d", &codigo2);
-                    PesquisaCliente (Clientes, quant2, codigo2);
-                    }
-
-                if (opcao2 == 3){
-                    printf("CODIGO DO CLIENTE: "); scanf ("%d", &codigo2);
-                    for (i=0; i<quant2;i++){
-                        if (codigo2 == Clientes[i].codigo) Clientes[quant2]= DigitarCliente();
-                        }
-                    }
-
-                if (opcao2 == 4){
-                    printf("CODIGO DO CLIENTE: "); scanf ("%d", &codigo2);
-                    for (i=0; i<quant2;i++){
-                        if (codigo2 == Clientes[i].codigo) Clientes[i].codigo = Clientes[i].codigo * (-1);
-                        }
-                    }
-
-                if (opcao2 == 5){
-                    ListarClientes(Clientes, quant2);
-                        }
-                    }
-                    while (opcao2 != 0);
-                }
-
-            }while (menu != 0 );
+        }while (opcao != 27);
 
  return 0;
 }

@@ -78,9 +78,6 @@ void setConsoleFontSize(int size) {
 
 
 void FecharTerminal (){
-    //OBS: COLOCAR TODAS AS FUNCOES DE FECHAR ARQUIVOS AQUI A MEDIDA QUE FOR FAZENDO ELAS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     textcolor(WHITE); textbackground(DARK_GRAY);
     Borda (0,0,85,25,1,0);
     gotoxy (36,10); printf ("FIM DA SESSAO");
@@ -156,6 +153,8 @@ int MenuTelaInicial (){
         gotoxy (34,2); printf ("MENU INICIAL");
         setConsoleFontSize(20);
         gotoxy (4,23); printf ("Desenvolvido por: Marcelo Matheus e Sarah Alkimim");
+        textcolor(7); textbackground(DARK_GRAY);
+        DesenharCarro();
         op = MenuHorizontal (opcoes, x, y, 4);
         if (op == 0) MostrarCadastros();
         if (op == 1) MostrarRotinas();
@@ -220,11 +219,23 @@ int MostrarRelatorios (){
 return op;
 }
 
+//DESENHAR O CARRO
+void DesenharCarro() {
+    int x = 20; // Posição inicial do desenho do carro
+    int y = 11;
 
+    gotoxy(x, y);     printf("                 $$$$$$$$$$$$$$$$");
+    gotoxy(x, y + 1); printf("              $$$$    $$$$$$    $$$$");
+    gotoxy(x, y + 2); printf("            $$$$        $$        $$$$$");
+    gotoxy(x, y + 3); printf("   $$$$$$$$$$$$$        $$        $$$$$$$");
+    gotoxy(x, y + 4); printf(" $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+    gotoxy(x, y + 5); printf("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+    gotoxy(x, y + 6); printf("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+    gotoxy(x, y + 7); printf(" $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+    gotoxy(x, y + 8); printf("   $$$$$$$                     $$$$$$$");
+    gotoxy(x, y + 9); printf("    $$$$$                       $$$$$");
 
-
-
-
+}
 
 
 //PASSAGEIROS
@@ -246,59 +257,3 @@ void MostrarTelaPassageiros(){
 }
 
 
-
-//INTERFACE DE LISTAR PRODUTOS
-void MostrarTelaListarProdutos(){ //apenas desenha a tela
-    textcolor(MAGENTA); textbackground(WHITE);
-    Borda (0,0,85,200,0,0);
-    gotoxy (32,2); printf ("PRODUTOS");
-    gotoxy (5,6);
-    textcolor(MAGENTA); textbackground(WHITE);
-
-}
-
-//PRODUTOS
-//TELA INICIAL
-/*void MostrarProdutosInicial(int*opcao){
-    int escolha;
-    textcolor(MAGENTA); textbackground(WHITE);
-    Borda (0,0,60,20,1,0);
-    textcolor(MAGENTA); textbackground(WHITE);
-    gotoxy (20,2); printf ("PRODUTOS");
-    gotoxy (10,6); printf ("1 - Novo produto");
-    gotoxy (10,9); printf ("2 - Pesquisar produto");
-    gotoxy (10,12); printf ("3 - Alterar produto");
-    gotoxy (10,15); printf ("4 - Excluir produto");
-    gotoxy (10,15); printf ("5 - Listar produtos");
-    gotoxy (10,15); printf ("0 - Voltar para o menu anterior");
-    gotoxy (10,19); printf ("Escolha a opcao: ");
-    scanf ("%d", &opcao);
-    *opcao=escolha;
-}*/
-
-
-
-
-
-/*int main(){
-    int Codigo;
-    char Nome[50], Endereco[80], Telefone[20], Confirmacao;
-    textcolor(MAGENTA); textbackground(WHITE);
-    Borda (0,0,85,20,1,0);
-    textcolor(MAGENTA); textbackground(WHITE);
-    gotoxy (20,2); printf ("Cadastro de Clientes");
-    gotoxy (10,6); printf ("Codigo: ");
-    Borda (20,5,15,2,0,0); //posição, largura, tamanho da borda
-    gotoxy (10,9); printf ("Nome: ");
-    Borda (20,8,60,2,0,0);
-    gotoxy (10,12); printf ("Endereco: ");
-    Borda (20,11,60,2,0,0);
-    gotoxy (10,15); printf ("Telefone: ");
-    Borda (20,14,20,2,0,0);
-    gotoxy (21,6); scanf ("%d", &Codigo);
-    gotoxy (21,9); scanf (" %[^\n]", Nome);
-    gotoxy (21,12); scanf (" %[^\n]", Endereco);
-    gotoxy (21,15); scanf (" %[^\n]", Telefone);
-    gotoxy (10,19); printf ("Confirma (S/N): ");
-    scanf ("%s", Confirmacao);
-}*/
