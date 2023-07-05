@@ -290,3 +290,61 @@
 	<time.h>
 	<math.h>
 
+1688521532 source:c:\users\sarah\desktop\trabalho final aeds\parte 2\cliente.c
+	<stdio.h>
+	"cliente.h"
+
+1688524300 source:c:\users\sarah\desktop\trabalho final aeds\parte 2\interface.c
+	<stdio.h>
+	<windows.h>
+	<wincon.h>
+	"interface.h"
+	"passageiros.h"
+	"motoristas.h"
+	"viagens.h"
+	<time.h>
+
+1688526049 c:\users\sarah\desktop\trabalho final aeds\parte 2\interface.h
+
+1688524920 c:\users\sarah\desktop\trabalho final aeds\parte 2\passageiros.h
+
+1688521532 c:\users\sarah\desktop\trabalho final aeds\parte 2\motoristas.h
+
+1688521532 c:\users\sarah\desktop\trabalho final aeds\parte 2\viagens.h
+	"motoristas.h"
+
+1688525627 source:c:\users\sarah\desktop\trabalho final aeds\parte 2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	"passageiros.h"
+	"motoristas.h"
+	"viagens.h"
+	"interface.h"
+
+1688521532 source:c:\users\sarah\desktop\trabalho final aeds\parte 2\motorista.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<string.h>
+	"motoristas.h"
+	"interface.h"
+
+1688525882 source:c:\users\sarah\desktop\trabalho final aeds\parte 2\passageiros.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"passageiros.h"
+	"interface.h"
+
+1688521532 source:c:\users\sarah\desktop\trabalho final aeds\parte 2\viagens.c
+	<stdio.h>
+	<string.h>
+	"passageiros.h"
+	"interface.h"
+	"motoristas.h"
+	"viagens.h"
+	<conio.h>
+	<time.h>
+	<math.h>
+

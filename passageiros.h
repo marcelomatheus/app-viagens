@@ -16,12 +16,12 @@ FILE* AbrirArquivoPassageiros();
 void FecharPassageiros();
 
 //INTERFACE
-void MenuPassageiro();
+int MenuPassageiro();
 
 //FUNCOES
 void DigitarPassageiro();
 Passageiro PesquisarArquivoPassageiro(int codigo);
-Passageiro MostrarPesquisaPassageiro();
+void MostrarPesquisaPassageiro();
 void AlterarArquivoPassageiro();
 void ExcluirArquivoPassageiro();
 void ListarPassageiroHTML(FILE* fpPassageiro);

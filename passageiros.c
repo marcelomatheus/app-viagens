@@ -18,14 +18,13 @@ FILE* AbrirArquivoPassageiros(){
             exit(1);
         }
     }
-    return fpPassageiro;
+return fpPassageiro;
 }
 
 //FECHA O ARQUIVO DE PASSAGEIROS
 void FecharPassageiros(){
     fclose(fpPassageiro);
 }
-
 
 //PEDE DADOS DE PASSAGEIROS
 void DigitarPassageiro(){
@@ -39,7 +38,6 @@ void DigitarPassageiro(){
     fseek(fpPassageiro,0, SEEK_END);
     fwrite(&P, sizeof(Passageiro), 1, fpPassageiro);
     fclose(fpPassageiro);
-    MenuPassageiro();
 }
 
 //PESQUISA DE PASSAGEIRO
@@ -49,10 +47,10 @@ Passageiro PesquisarArquivoPassageiro(int codigo){
     while (fread (&P, sizeof(Passageiro),1,fpPassageiro)){
         if (P.ID == codigo)  return P;
     }
-    return P;
+return P;
 }
 
-Passageiro MostrarPesquisaPassageiro(){
+void MostrarPesquisaPassageiro(){
     int codigo;
     Passageiro P;
     FILE * fpPassageiro = AbrirArquivoPassageiros();
@@ -75,7 +73,7 @@ Passageiro MostrarPesquisaPassageiro(){
         getchar();
         getchar();
         codigo = -1;
-        MenuPassageiro();
+        return;
     }
         if (codigo = -1){
             textbackground(2);
@@ -84,7 +82,7 @@ Passageiro MostrarPesquisaPassageiro(){
         }
         getchar();
         getchar();
-    MenuPassageiro();
+    return;
 }
 
 //ALTERAR PASSAGEIRO
@@ -115,7 +113,7 @@ void AlterarArquivoPassageiro(){
         fwrite(&Pnovo, sizeof(Passageiro),1, fpPassageiro);
         fclose(fpPassageiro);
         codigo = -1;
-        MenuPassageiro();
+        return;
     }
     if (codigo = -1){
         textbackground(2);
@@ -124,7 +122,7 @@ void AlterarArquivoPassageiro(){
     }
     getchar();
     getchar();
-    MenuPassageiro();
+    return;
 }
 
 //EXCLUIR PASSAGEIRO
@@ -155,7 +153,7 @@ void ExcluirArquivoPassageiro(){
         getchar();
         }
         fclose(fpPassageiro);
-        MenuPassageiro();
+        return;
 }
 
 //LISTAR PASSAGEIROS (abre arquivo HTML)
@@ -239,28 +237,27 @@ void ListarPassageiroHTML(FILE* fpPassageiro) {
     textbackground(2);
     gotoxy (29,18); printf("Arquivo HTML gerado com sucesso.");
     system("start passageiros.html");
-    MenuPassageiro();
+    return;
 }
 
-
-
 //INTERFACE DE PASSAGEIRO
-void MenuPassageiro (){
+int MenuPassageiro (){
     FILE * fpPassageiro = AbrirArquivoPassageiros();
     int op;
     char opcoes[][21] = {"Novo", "Pesquisar", "Alterar", "Excluir", "Listar", "MENU ANTERIOR"};
     int x[] = {12, 25, 40, 55, 70, 37};
     int y[] = {20, 20, 20, 20, 20, 22};
-    do {
-        MostrarTelaPassageiros();   //OBS: APAGAR MOSTRARTELAPRODUTO
+    do{
+        MostrarTelaPassageiros();
         op = MenuHorizontal (opcoes, x, y, 6);
         if (op == 0) DigitarPassageiro();
         if (op == 1) MostrarPesquisaPassageiro();
         if (op == 2) AlterarArquivoPassageiro();
         if (op == 3) ExcluirArquivoPassageiro();
         if (op == 4) ListarPassageiroHTML(fpPassageiro);
-        if (op == 5) MenuTelaInicial();
-    } while (op=! 27);
+        if (op == 5) MenuTelaInicial ();
+    } while (op != 27);
+    return op;
 }
 
 

@@ -31,14 +31,10 @@ int MenuHorizontal(char opcoes[][21], int x[], int y[], int n);
 int MenuVertical (char opcoes[][21], int x[], int y[], int n);
 int MenuTelaInicial ();
 int MostrarRelatorios ();
-int MostrarRotinas ();
-int MostrarCadastros ();
+void MostrarCadastros ();
 
 
 //PASSAGEIROS
 void MostrarTelaPassageiros();
-
-
-
 
 #endif // INTERFACE_H_INCLUDED

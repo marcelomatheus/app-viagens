@@ -159,7 +159,6 @@ int MenuVertical (char opcoes[][21], int x[], int y[], int n){
         return opcao;
 }
 
-
 //TELA INICIAL
 int MenuTelaInicial (){
     int op;
@@ -180,45 +179,25 @@ int MenuTelaInicial (){
         if (op == 1) MenuViagens();
         if (op == 2) MostrarRelatorios();
         if (op == 3) FecharTerminal();
-    } while (op=! 27);
+    } while (op != 27);
+    return op;
 }
 
 //SUB-MENU: CADASTROS
-int MostrarCadastros (){
+void MostrarCadastros (){
     int op;
     char opcoes[][21] = {"Passageiros", "Motoristas", "Voltar"};
     int x[] = {13, 13, 13};
     int y[] = {11, 13, 15};
-    do {
         textcolor(WHITE); textbackground(DARK_GRAY);
         Borda (11,10,14,6,1,0);
         textcolor(WHITE); textbackground(GREEN);
         op = MenuVertical (opcoes, x, y, 3);
         if (op == 0) MenuPassageiro();
-       //if (op == 1) MenuMotorista();
         if (op == 1) MenuMotorista();
-    } while (op=! 27);
-return op;
+        if (op == 2) return;
 }
 
-//SUB-MENU: ROTINAS
-int MostrarRotinas (){
-    int op;
-    char opcoes[][21] = {"Solicitar viagem", "Cancelar viagem", "Avaliar motorista", "Voltar"};
-    int x[] = {25, 25, 25, 25};
-    int y[] = {11, 13, 15, 17};
-    do {
-        textcolor(WHITE); textbackground(DARK_GRAY);
-        Borda (23,10,19,8,1,0);
-        textcolor(WHITE); textbackground(GREEN);
-        op = MenuVertical (opcoes, x, y, 4);
-        if (op == 0) MenuViagens();
-        //if (op == 1) MenuMotorista();
-        //if (op == 2) MenuTelaInicial ();
-        if (op == 3) MenuTelaInicial();
-    } while (op=! 27);
-return op;
-}
 
 //SUB-MENU: RELATORIOS
 int MostrarRelatorios (){
@@ -226,7 +205,6 @@ int MostrarRelatorios (){
     char opcoes[][21] = {"Viagens - motorista", "Viagens - passageiro", "Faturamento", "Voltar"};
     int x[] = {40, 40, 40, 40};
     int y[] = {11, 13, 15, 17};
-    do {
         textcolor(WHITE); textbackground(DARK_GRAY);
         Borda (38,10,22,8,1,0);
         textcolor(WHITE); textbackground(GREEN);
@@ -234,9 +212,41 @@ int MostrarRelatorios (){
         //if (op == 0) MenuProduto();
         //if (op == 1) MenuMotorista();
         //if (op == 2) MenuTelaInicial ();
-        if (op == 3) MenuTelaInicial();
-    } while (op=! 27);
-return op;
+        if (op == 3) return;
+}
+
+void DesenharCarro() {
+    int x = 20; // Posição inicial do desenho do carro
+    int y = 11;
+
+    gotoxy(x, y);     printf("                 $$$$$$$$$$$$$$$$");
+    gotoxy(x, y + 1); printf("              $$$$    $$$$$$    $$$$");
+    gotoxy(x, y + 2); printf("            $$$$        $$        $$$$$");
+    gotoxy(x, y + 3); printf("   $$$$$$$$$$$$$        $$        $$$$$$$");
+    gotoxy(x, y + 4); printf(" $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+    gotoxy(x, y + 5); printf("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+    gotoxy(x, y + 6); printf("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+    gotoxy(x, y + 7); printf(" $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+    gotoxy(x, y + 8); printf("   $$$$$$$                     $$$$$$$");
+    gotoxy(x, y + 9); printf("    $$$$$                       $$$$$");
+
+}
+
+//INTERFACE DE PASSAGEIROS
+void MostrarTelaPassageiros(){
+    textcolor(WHITE); textbackground(DARK_GRAY);
+    Borda (0,0,85,25,1,0);
+    textcolor(WHITE); textbackground(DARK_GRAY);
+    gotoxy (36,2); printf ("PASSAGEIROS");
+    gotoxy (10,6); printf ("ID: ");
+    Borda (20,5,14,2,0,0);
+    gotoxy (10,9); printf ("CPF*: ");
+    Borda (20,8,14,2,0,0);
+    gotoxy (10,12); printf ("Nome: ");
+    Borda (20,11,60,2,0,0);
+    gotoxy (10,15); printf ("Telefone*: ");
+    Borda (20,14,14,2,0,0);
+    gotoxy (10,17); printf ("* somente numeros");
 }
 
 //INTERFACE DE MOTORISTA
@@ -258,45 +268,6 @@ void MostrarTelaMotorista(){
     Borda (20,15,14,2,0,0);
     gotoxy (10,18); printf ("* somente numeros");
 }
-
-void DesenharCarro() {
-    int x = 20; // Posição inicial do desenho do carro
-    int y = 11;
-
-    gotoxy(x, y);     printf("                 $$$$$$$$$$$$$$$$");
-    gotoxy(x, y + 1); printf("              $$$$    $$$$$$    $$$$");
-    gotoxy(x, y + 2); printf("            $$$$        $$        $$$$$");
-    gotoxy(x, y + 3); printf("   $$$$$$$$$$$$$        $$        $$$$$$$");
-    gotoxy(x, y + 4); printf(" $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
-    gotoxy(x, y + 5); printf("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
-    gotoxy(x, y + 6); printf("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
-    gotoxy(x, y + 7); printf(" $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
-    gotoxy(x, y + 8); printf("   $$$$$$$                     $$$$$$$");
-    gotoxy(x, y + 9); printf("    $$$$$                       $$$$$");
-
-}
-
-
-
-
-//PASSAGEIROS
-//INTERFACE DE PASSAGEIROS
-void MostrarTelaPassageiros(){
-    textcolor(WHITE); textbackground(DARK_GRAY);
-    Borda (0,0,85,25,1,0);
-    textcolor(WHITE); textbackground(DARK_GRAY);
-    gotoxy (36,2); printf ("PASSAGEIROS");
-    gotoxy (10,6); printf ("ID: ");
-    Borda (20,5,14,2,0,0);
-    gotoxy (10,9); printf ("CPF*: ");
-    Borda (20,8,14,2,0,0);
-    gotoxy (10,12); printf ("Nome: ");
-    Borda (20,11,60,2,0,0);
-    gotoxy (10,15); printf ("Telefone*: ");
-    Borda (20,14,14,2,0,0);
-    gotoxy (10,17); printf ("* somente numeros");
-}
-
 
 
 
