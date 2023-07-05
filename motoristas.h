@@ -15,12 +15,17 @@ typedef struct motorista Motorista;
 void CadastroMotorista();
 void FecharArquivoMotorista();
 void ExcluirMotorista();
+void ExcluirArquivoMotorista();
 void GravarDados(Motorista motorista);
 FILE* AbrirArquivoMotorista();
 void SomarCorridaAoMotorista(Motorista motorista);
+void ListarMotoristaHTML(FILE* fpMotorista);
+int QuantidadeMotoristas(FILE *Arquivo);
+void CalcularAvaliacaoMotorista(Motorista motoristaParametro, double novaAvaliacao);
 Motorista PesquisarArquivoMotorista(int ID);
 void MostrarPesquisaMotorista();
 void MostrarTelaMotorista();
 Motorista DigitarMotorista();
+void AlterarArquivoMotorista();
 
 #endif // MOTORISTA_H_INCLUDED

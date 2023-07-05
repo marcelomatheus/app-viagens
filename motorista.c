@@ -116,14 +116,15 @@ void ListarMotoristaHTML(FILE* fpMotorista) {
 
 void MenuMotorista()
 {
-    int op;
+    int op = 0;
     Motorista motorista;
     M=AbrirArquivoMotorista();
+    do
+    {
     char opcoes[][21] = {"Novo", "Pesquisar", "Alterar", "Excluir", "Listar", "MENU ANTERIOR"};
     int x[] = {12, 25, 40, 55, 70, 37};
     int y[] = {20, 20, 20, 20, 20, 22};
-    do
-    {
+
         MostrarTelaMotorista();
         op = MenuHorizontal (opcoes, x, y, 6);
         if (op == 0)
@@ -145,9 +146,9 @@ void MenuMotorista()
             ListarMotoristaHTML(M);
         }
         fclose(M);
-        if (op == 5) MenuTelaInicial();
+        if (op == 5) return;
     }
-    while (op=! 27);
+    while(op=!5);
     fclose(M);
 }
 
@@ -284,7 +285,7 @@ void AlterarArquivoMotorista(){
         fwrite(&MNovo, sizeof(Motorista),1, M);
         fclose(M);
         codigo = -1;
-        MenuMotorista();
+
     }
     if (codigo == -1){
         textbackground(2);
@@ -293,7 +294,7 @@ void AlterarArquivoMotorista(){
     }
     getchar();
     getchar();
-    MenuMotorista();
+
 }
 
 void ExcluirArquivoMotorista(){
@@ -303,7 +304,7 @@ void ExcluirArquivoMotorista(){
     gotoxy (30,2); printf ("EXCLUIR MOTORISTA");
     gotoxy (11,20); printf ("                                                                  ");
     gotoxy (37,22); printf ("                   ");
-    gotoxy (21,6); scanf ("%d", &codigo);
+    gotoxy (21,4); scanf ("%d", &codigo);
     motorista = PesquisarArquivoMotorista(codigo);
     if (motorista.ID != -1) {
         gotoxy (21,7);

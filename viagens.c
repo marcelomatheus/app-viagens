@@ -12,8 +12,8 @@ FILE *M;
 FILE *fpViagem;
 
 
-/*A seguinte fun√ß√£o solicita a escrita do cpf do passeiro e verifica se ele existe no arquivo passageiros.txt,
-caso exista, retorna os dados do usu√°rio em forma de struct; caso n√£o exista, retorna ao MenuViagens() solicitando um novo cpf*/
+/*A seguinte funÁ„o solicita a escrita do cpf do passeiro e verifica se ele existe no arquivo passageiros.txt,
+caso exista, retorna os dados do usu·rio em forma de struct; caso n„o exista, retorna ao MenuViagens() solicitando um novo cpf*/
 
 void pausar(float delay1) {
 
@@ -156,7 +156,7 @@ Motorista EncontrarMotorista(){
     int qMotoristas = QuantidadeMotoristas(fpMotorista), contador=0;
     int numeroGerado;
     srand((unsigned)time(NULL));
-    numeroGerado = rand()%qMotoristas; //numeroGerado guarda o n√∫mero com a posi√ß√£o do motorista dentro do arquivo motorista.txt
+    numeroGerado = rand()%qMotoristas; //numeroGerado guarda o n˙mero com a posiÁ„o do motorista dentro do arquivo motorista.txt
     fseek(fpMotorista,0,SEEK_SET);
     while(fread(&motorista,sizeof(Motorista),1,fpMotorista)){
     if(numeroGerado==contador){
@@ -293,20 +293,20 @@ void MenuViagens(){
     Passageiro passageiros;
     Motorista motorista;
     passageiros = Autenticacao();
-    MostrarTelaEndereco(passageiros); //Essa fun√ß√£o mostra a tela para digitar endereco
-    viagens = DigitarEndereco(); //Essa fun√ß√£o recebe os endere√ßos digitados pelo usu√°rio
+    MostrarTelaEndereco(passageiros); //Essa funÁ„o mostra a tela para digitar endereco
+    viagens = DigitarEndereco(); //Essa funÁ„o recebe os endereÁos digitados pelo usu·rio
     MostrarTelaEspera();//Tela apenas para ilustrar
-    motorista = EncontrarMotorista(); //busca um motorista aleat√≥rio no arquivo motoristas.txt
-    SomarCorridaAoMotorista(motorista);//Essa fun√ß√£o acrescenta mais uma corrida ao motorista
-    //Poss√≠vel erro
+    motorista = EncontrarMotorista(); //busca um motorista aleatÛrio no arquivo motoristas.txt
+    SomarCorridaAoMotorista(motorista);//Essa funÁ„o acrescenta mais uma corrida ao motorista
+    //PossÌvel erro
     viagens = DeficoesViagem(viagens); //passa valor, diatancia e tempo para o struct viagem
-    MostrarTelaEmbarque(viagens,motorista); //realiza toda opera√ß√£o de viagem
-    viagens = CopiarDadosParaViagens(motorista,passageiros,viagens); //Essa fun√ß√£o passa dados do motorista e do passageiro para o struct viagens
+    MostrarTelaEmbarque(viagens,motorista); //realiza toda operaÁ„o de viagem
+    viagens = CopiarDadosParaViagens(motorista,passageiros,viagens); //Essa funÁ„o passa dados do motorista e do passageiro para o struct viagens
     gravarDadosViagem(viagens);//Grava os dados da viagem em viagens.txt
     //Essa funcao acrescenta mais uma corrida ao total de corridas do motorista
     opMenu = MenuHorizontal(opcoes, x, y, 2);
         if(opMenu==0){
-            return();
+            return;
         }else if(opMenu==1){
             AvaliarMotorista(motorista);
         }

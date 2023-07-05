@@ -171,7 +171,6 @@ void ImprimirRelatorioHTMLPass(FILE* fpViagem, int codigo) {
     fprintf(fpHTML, "</table>\n");
     fprintf(fpHTML, "</body>\n");
     fprintf(fpHTML, "</html>\n");
-
     fclose(fpHTML);
     textbackground(2);
     gotoxy (29,18); printf("Arquivo HTML gerado com sucesso.");
