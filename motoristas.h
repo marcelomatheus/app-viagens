@@ -18,7 +18,8 @@ void ExcluirMotorista();
 void GravarDados(Motorista motorista);
 FILE* AbrirArquivoMotorista();
 void SomarCorridaAoMotorista(Motorista motorista);
-void PesquisarMotorista();
+Motorista PesquisarArquivoMotorista(long int cpf);
+void MostrarPesquisaMotorista();
 void MostrarTelaMotorista();
 Motorista DigitarMotorista();
 

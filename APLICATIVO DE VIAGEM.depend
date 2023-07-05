@@ -233,3 +233,60 @@
 	<time.h>
 	<math.h>
 
+1688488874 source:c:\users\marce\desktop\appviagens\v.01-04.07\cliente.c
+	<stdio.h>
+	"cliente.h"
+
+1688488874 source:c:\users\marce\desktop\appviagens\v.01-04.07\interface.c
+	<stdio.h>
+	<windows.h>
+	<wincon.h>
+	"interface.h"
+	"passageiros.h"
+	"motoristas.h"
+	"viagens.h"
+	<time.h>
+
+1688488874 c:\users\marce\desktop\appviagens\v.01-04.07\interface.h
+
+1688492116 c:\users\marce\desktop\appviagens\v.01-04.07\passageiros.h
+
+1688492190 c:\users\marce\desktop\appviagens\v.01-04.07\motoristas.h
+
+1688488874 c:\users\marce\desktop\appviagens\v.01-04.07\viagens.h
+	"motoristas.h"
+
+1688488874 source:c:\users\marce\desktop\appviagens\v.01-04.07\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	"produto.h"
+	"cliente.h"
+	"interface.h"
+
+1688490178 source:c:\users\marce\desktop\appviagens\v.01-04.07\motorista.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<string.h>
+	"motoristas.h"
+	"interface.h"
+
+1688488874 source:c:\users\marce\desktop\appviagens\v.01-04.07\passageiros.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"passageiros.h"
+	"interface.h"
+
+1688492197 source:c:\users\marce\desktop\appviagens\v.01-04.07\viagens.c
+	<stdio.h>
+	<string.h>
+	"passageiros.h"
+	"interface.h"
+	"motoristas.h"
+	"viagens.h"
+	<conio.h>
+	<time.h>
+	<math.h>
+

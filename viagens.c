@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <string.h>
+#include "passageiros.h"
 #include "interface.h"
 #include "motoristas.h"
-#include "passageiros.h"
 #include "viagens.h"
 #include <conio.h>
 #include <time.h>
@@ -60,7 +60,7 @@ Passageiro Autenticacao(){
     printf("ou ESC para sair");
     op = getTecla();
     if(op==27){
-        main();
+        exit(0);
     }else{
         MenuViagens();
     }
@@ -80,6 +80,7 @@ void MostrarTelaEndereco(Passageiro passageiro){
     Borda(4,12,77,3,0,0);
     gotoxy(10,12);
     printf(" Endereco de destino ");
+    return;
 }
 
 Viagem DigitarEndereco(){
@@ -96,7 +97,7 @@ Viagem DigitarEndereco(){
     if(op==0){
         return viagens;
     }else if(op==1){
-        main();
+        exit(0);
     }
 }
 
