@@ -1,0 +1,309 @@
+# depslib dependency file v1.0
+1687805307 source:c:\users\sarah\desktop\trabalho final aeds\aplicativo de viagem\cliente.c
+	<stdio.h>
+	"cliente.h"
+
+1687805318 c:\users\sarah\desktop\trabalho final aeds\aplicativo de viagem\cliente.h
+
+1687804058 source:c:\users\sarah\desktop\trabalho final aeds\aplicativo de viagem\motorista.c
+
+1687999932 source:c:\users\sarah\desktop\trabalho final aeds\aplicativo de viagem\passageiros.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"passageiros.h"
+	"interface.h"
+
+1687805011 source:c:\users\sarah\desktop\trabalho final aeds\aplicativo de viagem\viagens.c
+
+1687999932 source:c:\users\sarah\desktop\trabalho final aeds\aplicativo de viagem\interface.c
+	<stdio.h>
+	<windows.h>
+	<wincon.h>
+	"interface.h"
+	"passageiros.h"
+
+1687960562 c:\users\sarah\desktop\trabalho final aeds\aplicativo de viagem\interface.h
+
+1688000530 source:c:\users\sarah\desktop\trabalho final aeds\aplicativo de viagem\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	"produto.h"
+	"cliente.h"
+	"interface.h"
+
+1687805171 c:\users\sarah\desktop\trabalho final aeds\aplicativo de viagem\produto.h
+
+1687805349 source:c:\users\sarah\desktop\trabalho final aeds\aplicativo de viagem\modelo do main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	"produto.h"
+	"cliente.h"
+	"interface.h"
+
+1687998137 source:c:\users\sarah\desktop\trabalho final aeds\aplicativo de viagem\produto.c
+	<stdio.h>
+	"produto.h"
+	<windows.h>
+	"interface.h"
+
+1687999186 c:\users\sarah\desktop\trabalho final aeds\aplicativo de viagem\passageiros.h
+
+1688253254 source:c:\users\marce\desktop\sarah\appviagens\appviagens\cliente.c
+	<stdio.h>
+	"cliente.h"
+
+1688253254 c:\users\marce\desktop\sarah\appviagens\appviagens\cliente.h
+
+1688265320 source:c:\users\marce\desktop\sarah\appviagens\appviagens\interface.c
+	<stdio.h>
+	<windows.h>
+	<wincon.h>
+	"interface.h"
+	"passageiros.h"
+	"motoristas.h"
+
+1688254707 c:\users\marce\desktop\sarah\appviagens\appviagens\interface.h
+
+1688253254 c:\users\marce\desktop\sarah\appviagens\appviagens\passageiros.h
+
+1688254219 source:c:\users\marce\desktop\sarah\appviagens\appviagens\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	"produto.h"
+	"cliente.h"
+	"interface.h"
+
+1688253254 c:\users\marce\desktop\sarah\appviagens\appviagens\produto.h
+
+1688269831 source:c:\users\marce\desktop\sarah\appviagens\appviagens\motorista.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"motoristas.h"
+	"interface.h"
+
+1688253254 source:c:\users\marce\desktop\sarah\appviagens\appviagens\passageiros.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"passageiros.h"
+	"interface.h"
+
+1688253254 source:c:\users\marce\desktop\sarah\appviagens\appviagens\produto.c
+	<stdio.h>
+	"produto.h"
+	<windows.h>
+	"interface.h"
+
+1688253254 source:c:\users\marce\desktop\sarah\appviagens\appviagens\viagens.c
+
+1688269553 c:\users\marce\desktop\sarah\appviagens\appviagens\motoristas.h
+
+1688253254 source:c:\users\marce\desktop\parte1\appviagens\cliente.c
+	<stdio.h>
+	"cliente.h"
+
+1688253254 c:\users\marce\desktop\parte1\appviagens\cliente.h
+
+1688304572 source:c:\users\marce\desktop\parte1\appviagens\interface.c
+	<stdio.h>
+	<windows.h>
+	<wincon.h>
+	"interface.h"
+	"passageiros.h"
+	"motoristas.h"
+	"viagens.h"
+	<time.h>
+
+1688273831 c:\users\marce\desktop\parte1\appviagens\interface.h
+
+1688304152 c:\users\marce\desktop\parte1\appviagens\passageiros.h
+
+1688269553 c:\users\marce\desktop\parte1\appviagens\motoristas.h
+
+1688273648 source:c:\users\marce\desktop\parte1\appviagens\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	"produto.h"
+	"cliente.h"
+	"interface.h"
+
+1688253254 c:\users\marce\desktop\parte1\appviagens\produto.h
+
+1688271376 source:c:\users\marce\desktop\parte1\appviagens\motorista.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<string.h>
+	"motoristas.h"
+	"interface.h"
+
+1688304152 source:c:\users\marce\desktop\parte1\appviagens\passageiros.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"passageiros.h"
+	"interface.h"
+
+1688253254 source:c:\users\marce\desktop\parte1\appviagens\produto.c
+	<stdio.h>
+	"produto.h"
+	<windows.h>
+	"interface.h"
+
+1688324032 source:c:\users\marce\desktop\parte1\appviagens\viagens.c
+	<stdio.h>
+	<string.h>
+	"interface.h"
+	"motoristas.h"
+	"passageiros.h"
+	"viagens.h"
+
+1688304572 c:\users\marce\desktop\parte1\appviagens\viagens.h
+
+1688253254 source:c:\users\marce\desktop\parte01\cliente.c
+	<stdio.h>
+	"cliente.h"
+
+1688253254 c:\users\marce\desktop\parte01\cliente.h
+
+1688446014 source:c:\users\marce\desktop\parte01\interface.c
+	<stdio.h>
+	<windows.h>
+	<wincon.h>
+	"interface.h"
+	"passageiros.h"
+	"motoristas.h"
+	"viagens.h"
+	<time.h>
+
+1688443651 c:\users\marce\desktop\parte01\interface.h
+
+1688445664 c:\users\marce\desktop\parte01\passageiros.h
+
+1688425215 c:\users\marce\desktop\parte01\motoristas.h
+
+1688443651 c:\users\marce\desktop\parte01\viagens.h
+	"motoristas.h"
+
+1688442545 source:c:\users\marce\desktop\parte01\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	"produto.h"
+	"cliente.h"
+	"interface.h"
+
+1688253254 c:\users\marce\desktop\parte01\produto.h
+
+1688430600 source:c:\users\marce\desktop\parte01\motorista.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<string.h>
+	"motoristas.h"
+	"interface.h"
+
+1688445690 source:c:\users\marce\desktop\parte01\passageiros.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"passageiros.h"
+	"interface.h"
+
+1688253254 source:c:\users\marce\desktop\parte01\produto.c
+	<stdio.h>
+	"produto.h"
+	<windows.h>
+	"interface.h"
+
+1688446224 source:c:\users\marce\desktop\parte01\viagens.c
+	<stdio.h>
+	<string.h>
+	"interface.h"
+	"motoristas.h"
+	"passageiros.h"
+	"viagens.h"
+	<conio.h>
+	<time.h>
+	<math.h>
+
+1688488874 source:c:\users\marce\desktop\appviagens\v.01-04.07\cliente.c
+	<stdio.h>
+	"cliente.h"
+
+1688573189 source:c:\users\marce\desktop\appviagens\v.01-04.07\interface.c
+	<stdio.h>
+	<windows.h>
+	<wincon.h>
+	"interface.h"
+	"passageiros.h"
+	"motoristas.h"
+	"viagens.h"
+	<time.h>
+
+1688488874 c:\users\marce\desktop\appviagens\v.01-04.07\interface.h
+
+1688572491 c:\users\marce\desktop\appviagens\v.01-04.07\passageiros.h
+
+1688523685 c:\users\marce\desktop\appviagens\v.01-04.07\motoristas.h
+
+1688567933 c:\users\marce\desktop\appviagens\v.01-04.07\viagens.h
+	"motoristas.h"
+	"passageiros.h"
+
+1688572607 source:c:\users\marce\desktop\appviagens\v.01-04.07\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	"passageiros.h"
+	"motoristas.h"
+	"viagens.h"
+	"interface.h"
+
+1688572352 source:c:\users\marce\desktop\appviagens\v.01-04.07\motorista.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<string.h>
+	"motoristas.h"
+	"interface.h"
+
+1688573414 source:c:\users\marce\desktop\appviagens\v.01-04.07\passageiros.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"passageiros.h"
+	"interface.h"
+
+1688572132 source:c:\users\marce\desktop\appviagens\v.01-04.07\viagens.c
+	<stdio.h>
+	<string.h>
+	"passageiros.h"
+	"interface.h"
+	"motoristas.h"
+	"viagens.h"
+	<conio.h>
+	<time.h>
+	<math.h>
+
+1688571708 source:c:\users\marce\desktop\appviagens\v.01-04.07\relatorio.c
+	<stdio.h>
+	<string.h>
+	"motoristas.h"
+	"passageiros.h"
+	"viagens.h"
+	"interface.h"
+	"relatorio.h"
+
+1688571813 c:\users\marce\desktop\appviagens\v.01-04.07\relatorio.h
+	"motoristas.h"
+	"passageiros.h"
+	"viagens.h"
+	"interface.h"
+
