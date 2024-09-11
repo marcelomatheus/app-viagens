@@ -1,7 +1,9 @@
-![image](https://github.com/user-attachments/assets/4d0a7339-e7cc-439e-b557-7efd0d757a42)
-
 # App de viagens
-Trabalho final da disciplina de Algoritmo e Estrutura de Dados da Universidade Estadual de Montes Claros - Simulação de um sistema de viagens por aplicativo em linguagem C.
+Trabalho final da disciplina de Algoritmo e Estrutura de Dados da Universidade Estadual de Montes Claros - Simulação de um sistema de viagens por aplicativo em linguagem C usando o terminal.
+
+![image](https://github.com/user-attachments/assets/31b9dc96-e26e-426a-a7cc-7978d4ffb4c3)
+![image](https://github.com/user-attachments/assets/e5028857-256a-468d-8ea2-dffe3cb4fdc6)
+
 
 ## Roadmap:
 ### Cadastro
